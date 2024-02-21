@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+
+:root{
+    --fonte-principal: "Kode Mono", monospace;
+    --bg-color: #900C3F;
+    --primary-color: #F8DE22;
+    --bg-btn: #F94C10;
+}
+
+body{
+    padding: 0 10px;
+    font-family: var(--fonte-principal);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.mensagem{
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.box{
+    font-size: 3em;
+    border: 4px solid var(--primary-color);
+    display: inline-block;
+    padding: 5px;
+    margin: 20px 0;
+}
+
+.gif{
+    width: 200px;
+}
+
+.btn{
+    margin-top: 40px;
+    padding: 5px;
+    font-size: 2.5em;
+    width: 120px;
+    background-color: #F94C10;
+    border: none;
+    color: #C70039;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn:active{
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+    .gif{   
+        width: 150px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+    h3{
+        font-size: 1.1em;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .gif{
+        width: 150px;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+    h3{
+        font-size: 1.1em;
+    }
+}
